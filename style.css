@@ -95,17 +95,6 @@ footer {
   color:#fff; text-decoration:none; font-size:22px;
 }
 
-/* Animation */
-@keyframes fadeUp {
-  from { opacity:0; transform: translateY(40px); }
-  to { opacity:1; transform: translateY(0); }
-}
-
-/* Responsive */
-@media(max-width:900px){
-  .location-grid { grid-template-columns:1fr; }
-}
-
 .image-showcase {
   padding: 50px 0;
   background: #f9fbfc;
@@ -122,4 +111,64 @@ footer {
 
 .image-showcase img:hover {
   transform: scale(1.03);
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from { opacity:0; transform: translateY(40px); }
+  to { opacity:1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .location-grid { grid-template-columns:1fr; }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  .hero-buttons a {
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-steps, .grid-cards {
+    grid-template-columns: 1fr; /* single column on mobile */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .review {
+    font-size: 14px;
+    padding: 15px;
+  }
+  .reviews-btn a {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .location-grid {
+    grid-template-columns: 1fr; /* Stack info and map vertically */
+    gap: 20px;
+  }
+  .map { min-height: 250px; }
+}
+
+ @media (max-width: 768px) {
+  nav {
+    display: none; /* or use a hamburger menu later */
+  }
+  .btn-primary {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 }
